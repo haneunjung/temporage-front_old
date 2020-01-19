@@ -1,5 +1,5 @@
 # temporage-front
-" Vue
+> Vue
 
 ## Project setup
 ```
