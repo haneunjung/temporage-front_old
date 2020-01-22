@@ -1,29 +1,30 @@
 <template>
     <div id="app">
-        <MainVue></MainVue>
-        <SenderVue></SenderVue>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-    import MainVue from './components/Main.vue'
-    import SenderVue from './components/Sender.vue'
-
+    // import MainVue from './components/Main.vue'
     export default {
-        components: {
-            'MainVue': MainVue,
-            'SenderVue' : SenderVue
+        methods: {
+            goBack() {
+                window.history.length > 1
+                    ? this.$router.go(-1)
+                    : this.$router.push('/')
+            }
         }
     }
 </script>
-<!--
-font-family: 'Black Han Sans', sans-serif;
-font-family: 'Nanum Pen Script', cursive;
--->
+
 
 <style>
+    /*
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Nanum Pen Script', cursive;
+    */
+
     #app {
-        /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
         font-family: 'Nanum Pen Script', cursive;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -34,8 +35,5 @@ font-family: 'Nanum Pen Script', cursive;
         right: 0;
         height: 60%;
         margin: auto;
-        /*top: 50%;*/
-        /*height: 100px;*/
-        /*margin-top: -50px;*/
     }
 </style>
