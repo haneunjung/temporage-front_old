@@ -3,7 +3,7 @@ name: Deploy action # action 명
 on:
   push:
     branches:
-      - release/*
+      - master
 
 jobs:
   build:
