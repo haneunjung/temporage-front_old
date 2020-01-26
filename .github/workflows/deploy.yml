@@ -1,4 +1,4 @@
-name: Main CI # action 명
+name: Deploy action # action 명
 
 on:
   push:
