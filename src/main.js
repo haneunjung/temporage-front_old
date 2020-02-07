@@ -8,6 +8,7 @@ import TsSender from './components/TemporageSender'
 import TsRepo from './components/TemporageRepo'
 
 Vue.use(VueRouter);
+
 Vue.config.productionTip = false;
 
 var router = new VueRouter({
