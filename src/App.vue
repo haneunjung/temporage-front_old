@@ -5,7 +5,6 @@
 </template>
 
 <script>
-    // import MainVue from './components/Main.vue'
     export default {
         methods: {
             goBack() {
@@ -17,13 +16,7 @@
     }
 </script>
 
-
 <style>
-    /*
-    font-family: 'Black Han Sans', sans-serif;
-    font-family: 'Nanum Pen Script', cursive;
-    */
-
     #app {
         font-family: 'Nanum Pen Script', cursive;
         -webkit-font-smoothing: antialiased;
